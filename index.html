@@ -10,6 +10,9 @@
 	<body>
 		<h1>Morse Code Translator</h1>
 		<div class="container" id="container">
+			<button class="btn__translateEng" id="btn__translateEng">
+				Translate from English!
+			</button>
 			<textarea
 				name="englishText"
 				id="englishText"
@@ -18,14 +21,19 @@
 				placeholder="English goes in here ☜(ﾟヮﾟ☜)"
 			></textarea>
 			<br />
+			<div class="doThings" id="doThings"></div>
 			<textarea
 				name="morseText"
 				id="morseText"
 				cols="35"
 				rows="8"
-				placeholder="(☞ﾟヮﾟ)☞ morse goes in here"
+				placeholder="(☞ﾟヮﾟ)☞ morse goes in here, please use ' |' to represent space between words"
 			></textarea>
+			<button class="btn__translateMor" id="btn__translateMor">
+				Translate from Morse!
+			</button>
 		</div>
 	</body>
-	<script src="script.js" type="module"></script>
+
+	<script src="./modules/doc_obj_mod.js" type="module"></script>
 </html>

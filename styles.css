@@ -23,5 +23,13 @@ h1 {
 }
 
 #englishText, #morseText {
-  margin: 0 2vw 0 0;
+  margin: 0 2vw 0 2vw;
+}
+
+.btn__translateEng, .btn__translateMor {
+  padding: 0vh 1vw 1vh 1vw;
+  margin: 0vh 1vw 1vh 1vw;
+  border-radius: 5%;
+  box-shadow: 4px 4px gray;
+  cursor: pointer;
 }
