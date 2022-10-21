@@ -1,5 +1,5 @@
-import * as logic from "./logic.mjs";
-import * as data from "./data.mjs";
+import * as logic from "./logic.js";
+import * as data from "./data.js";
 let morseTxtArea = document.getElementById("morseText");
 let englTxtArea = document.getElementById("englishText");
 let translateBtnEng = document.getElementById("btn__translateEng");
@@ -12,7 +12,9 @@ translateBtnEng.addEventListener("click", () => {
 	eText = logic.getText(englTxtArea);
 	mText = logic.getText(morseTxtArea);
 	let eSplit = logic.splitForTranslationFromEnglish(eText);
+	console.log(eSplit);
 	mText = logic.matchKeyValue(eSplit, data.alphabetMorse);
+	console.log(mText);
 	morseTxtArea.value = mText;
 });
 translateBtnMor.addEventListener("click", () => {
